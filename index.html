@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Meu Portfólio</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre-mim">Sobre Mim</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#certificacoes">Certificações</a></li>
+            <li><a href="#habilidades">Habilidades</a></li> <!-- Apenas o link para habilidades -->
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+    <!-- Seção de Introdução -->
+    <section id="inicio" class="intro">
+        <h1>Juliana Vieira</h1>
+        <p id="typewriter"></p> <!-- Aqui será exibido o efeito de digitação -->
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/juliana-vieira-santos-80bb94266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/juliianav" target="_blank">
+                <i class="fab fa-github"> </i></a>
+        
+            </a>
+        
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre-mim">
+        <h2>Sobre Mim</h2>
+        <p>Meu nome é Juliana Vieira e eu sou apaixonada por desenvolvimento web. Desde que comecei a explorar o mundo da programação, tenho me aprofundado em linguagens como HTML, CSS e JavaScript.</p>
+        <p>Atualmente, estou cursando Análise e Desenvolvimento de Sistemas (ADS) e focando no desenvolvimento FullStack.</p>
+        <p>Estou entusiasmada com as oportunidades futuras na área de tecnologia e ansiosa para colaborar em projetos desafiadores que possam impactar positivamente a vida das pessoas.</p>
+        
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projects-container">
+            <div class="project-box">EM BREVE</div>
+            <div class="project-box">EM BREVE</div>
+            <div class="project-box">EM BREVE</div>
+            <div class="project-box">EM BREVE</div>
+        </div>
+    </section>
+
+  <!-- Seção Certificações -->
+<section id="certificacoes">
+    <h2>Certificações</h2>
+    <div class="certifications-wrapper">
+       
+        <div class="certifications-container">
+            <div class="certification-box"> <a href="file:///C:/Users/julia/Downloads/certificate-fundamentos-de-data-science-e-inteligencia-artificial-66bd6436f1588081cb08a019%20(1).pdf" target="_blank"> Fundamentos de Data Science e Inteligência Artificial</a>
+
+
+            <p></p></div>
+            <div class="certification-box"><a href="https://ava.hackersdobem.org.br/mod/customcert/my_certificates.php?downloadcert=1&userid=49741&certificateid=2" target="_blank"> Introdução a Cybersegurança</a></div>
+           
+        </div>
+        
+    </div>
+    <!-- Seção Habilidades -->
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="habilidades-container">
+        <div class="habilidade">HTML</div>
+        <div class="habilidade">CSS</div>
+        <div class="habilidade">JavaScript</div>
+        <div class="habilidade">Python</div>
+        <div class="habilidade">React</div>
+        <!-- Adicione mais habilidades conforme necessário -->
+    </div>
+</section>
+</section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Conecte-se comigo:</p>
+        <a href="https://www.linkedin.com" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+            <p><a href="mailto:julianavs9103@gmail.com" target="_blank">Julianavs9103@gamil.com</a></p>
+        </a>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        const text = "Desenvolvedora Web";
+        let index = 0;
+
+        function typeWriter() {
+            if (index < text.length) {
+                document.getElementById("typewriter").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        window.onload = function() {
+            typeWriter();
+        };
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,407 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 3em; /* Tamanho grande para o nome */
+    margin: 0;
+}
+
+#typewriter {
+    font-size: 1.5em; /* Tamanho do texto que aparece com o efeito */
+    margin-top: 10px;
+}
+
+.projects-container, .certifications-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto; /* Permite rolagem horizontal */
+}
+
+.project-box, .certification-box {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.project-box:hover, .certification-box:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.icons img {
+    width: 30px; /* Tamanho dos ícones */
+    margin: 0 10px;
+}
+
+.social-link {
+    margin: 0 10px;
+    font-size: 24px;
+}
+/* Estilo básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Seção de Introdução */
+.intro {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.intro h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00FF7F;
+}
+
+/* Ícones sociais */
+.icons {
+    margin-top: 20px; /* Espaço acima dos ícones */
+}
+
+.icons a {
+    margin: 0 30px; /* Aumentado o espaço entre os ícones */
+    color: #fff; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.icons a:hover {
+    color: #00aaff; /* Cor ao passar o mouse (pode ser ajustada) */
+}
+/* Sobre Mim */
+#sobre-mim {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #1e1e1e;
+}
+
+#sobre-mim h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#sobre-mim p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+#sobre-mim {
+    text-align: center; /* Centraliza o texto */
+}
+
+
+/* Projetos e Certificações */
+.projects-container, .certifications-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.project-box, .certification-box {
+    background-color: #00FF7F;
+    color: #1e1e1e;
+    padding: 20px;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #1e1e1e;
+    color: white;
+}
+<!-- Seção Certificações -->
+<section id="certificacoes">
+    <h2>Certificações</h2>
+    <div class="certifications-wrapper">
+        
+        <div class="certifications-container">
+            <div class="certification-box">Certificação 1</div>
+            <div class="certification-box">Certificação 2</div>
+            <div class="certification-box">Certificação 3</div>
+            <div class="certification-box">Certificação 4</div>
+        </div>
+        
+    </div>
+</section>
+ /* Certificações */
+.certifications-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Ocultar certificações fora da visão */
+}
+
+.certifications-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Animação suave ao mover */
+}
+
+.certification-box {
+    background-color: #00FF7F;
+    color: #1e1e1e;
+    padding: 20px;
+    margin: 10px;
+    width: 300px; /* Largura de cada caixa */
+    text-align: center;
+    border-radius: 8px;
+    flex-shrink: 0; /* Evitar que os itens encolham */
+    position: relative;
+}
+
+/* Botões de navegação */
+.scroll-left, .scroll-right {
+    background-color: #00FF7F;
+    color: #1e1e1e;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.scroll-left {
+    left: 10px;
+}
+
+.scroll-right {
+    right: 10px;
+}
+.prev{
+    display: none;
+    .habilidades-container {
+        display: flex;
+        flex-wrap: wrap; /* Permite que as habilidades se ajustem na linha seguinte, se necessário */
+        justify-content: center; /* Centraliza as habilidades */
+        margin-top: 20px; /* Espaço acima da seção */
+    }
+    
+    .habilidade {
+        background-color: #4CAF50; /* Cor de fundo da habilidade */
+        color: white; /* Cor do texto */
+        padding: 10px 20px; /* Espaçamento interno */
+        margin: 10px; /* Espaçamento entre as habilidades */
+        border-radius: 5px; /* Cantos arredondados */
+        transition: transform 0.3s; /* Efeito de zoom */
+    }
+    
+    .habilidade:hover {
+        transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    }
+}
+#contato {
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0; /* Espaço acima e abaixo da seção */
+}
+
+.social-link {
+    margin: 0 15px; /* Espaçamento entre os ícones de redes sociais */
+    font-size: 24px; /* Tamanho do ícone */
+    color: #333; /* Cor do ícone */
+    transition: color 0.3s; /* Transição suave para mudança de cor */
+}
+
+.social-link:hover {
+    color: #4CAF50; /* Cor ao passar o mouse */
+}
+
+#contato a {
+    color: #333; /* Cor do e-mail */
+    text-decoration: none; /* Remove sublinhado do link */
+}
+
+#contato a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+/* Ajustes para dispositivos com largura máxima de 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro h1 {
+        font-size: 2em; /* Reduz o tamanho do nome em telas menores */
+    }
+
+    #typewriter {
+        font-size: 1.2em; /* Ajusta o tamanho do texto com efeito de digitação */
+    }
+
+    .project-box, .certification-box {
+        width: 100%; /* Faz as caixas de projeto e certificações ocuparem 100% da largura */
+        margin: 10px 0; /* Adiciona espaço entre as caixas */
+    }
+
+    .icons a {
+        font-size: 20px; /* Reduz o tamanho dos ícones em dispositivos menores */
+        margin: 0 15px; /* Ajusta o espaçamento dos ícones sociais */
+    }
+}
+
+/* Ajustes para dispositivos com largura máxima de 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    header nav ul li a {
+        font-size: 14px; /* Reduz o tamanho do texto dos links de navegação */
+    }
+
+    .intro h1 {
+        font-size: 1.5em; /* Reduz ainda mais o tamanho do nome */
+    }
+
+    .intro p {
+        font-size: 1.2em; /* Ajusta o tamanho da descrição */
+    }
+
+    .project-box, .certification-box {
+        font-size: 1em; /* Ajusta o tamanho do texto nas caixas */
+    }
+
+    .habilidade {
+        padding: 5px 10px; /* Diminui o padding das habilidades */
+        font-size: 0.9em; /* Reduz o tamanho do texto das habilidades */
+    }
+}
+/* Estilo do cabeçalho */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/* Navegação horizontal */
+nav ul {
+    list-style-type: none;
+    display: flex; /* Deixa os itens em linha (horizontal) */
+    justify-content: center; /* Centraliza os itens */
+    flex-wrap: wrap; /* Permite quebrar linha em dispositivos menores, se necessário */
+    padding: 0;
+    margin: 0;
+}
+
+/* Espaçamento dos itens */
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+/* Estilo dos links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* Em telas menores, reduzir o espaçamento */
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 0 10px; /* Reduz o espaço entre os itens em telas menores */
+    }
+    nav a {
+        font-size: 16px; /* Diminui o tamanho da fonte */
+    }
+}
+
+/* Em telas bem pequenas (celulares), ajustar mais ainda */
+@media (max-width: 480px) {
+    nav ul li {
+        margin: 0 5px; /* Menos espaço entre os itens em celulares */
+    }
+    nav a {
+        font-size: 14px; /* Fonte ainda menor em telas muito pequenas */
+    }
+}
+/* Estilo padrão para telas grandes */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Estilo para telas pequenas (mobile) */
+@media (max-width: 768px) {
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    /* Diminuir tamanho de fontes e ajustar espaçamentos */
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 10px;
+    }
+}
+
+
